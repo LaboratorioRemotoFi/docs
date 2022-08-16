@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+slug: /
 ---
 
 import Tabs from '@theme/Tabs';
@@ -20,21 +21,3 @@ Este proyecto incluye tres secciones:
 - Eres profesor? Ver la sección de **Guía para profesores**
 - Eres alumno? Ver la sección de **Guía para alumnos**
 - Quieres desarrollar una nueva práctica e integrarla con la interfaz? Ver la sección **Guía para implementar nuevas prácticas**
-
-<Tabs>
-  <TabItem value="apple" label="Apple" default>
-    This is an apple 🍎
-  </TabItem>
-  <TabItem value="orange" label="Orange">
-    This is an orange 🍊
-  </TabItem>
-  <TabItem value="banana" label="Banana">
-    This is a banana 🍌
-  </TabItem>
-</Tabs>
-
-```jsx title="/src/components/HelloCodeTitle.js"
-function HelloCodeTitle(props) {
-  return <h1>Hello, {props.name}</h1>;
-}
-```
