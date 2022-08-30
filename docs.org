@@ -1,4 +1,17 @@
 #+title: Docs
+* Cuáles son los puntso que hay que hacer ahorita?
+** Cuál es el proceso actual?
+*** Van a la documentación para saber qué hacer
+*** Instalan las dependencias que se necesitan:
+**** nodejs
+**** git
+*** Descargan el webapp y lo corren
+*** Descargan desde git los dos repositorios
+*** Ejecutan
+** Mejorar la experiencia de desarrollo
+-
+** Mejorar documentación
+- Agregar instrucciones para iniciar el servidor web y el servidor de prácticas
 * Acerca de este proyecto
 **Laboratorio remoto FI** es un proyecto desarrollado en la facultad de ingeniería de la UNAM que tiene el propósito de ayudar a profesores y alumnos del área de ciencias básicas a realizar prácticas de forma remota. Este proyecto incluye tres secciones:
 
@@ -12,8 +25,43 @@
 - Eres alumno? Ver la sección de **Guía para alumnos**
 - Quieres desarrollar una nueva práctica e integrarla con la interfaz? Ver la sección **Guía para implementar nuevas prácticas**
 * Guía para profesores
+** Generar una nueva cuenta
+** Acceder al sistema
 * Guía para alumnos
+** Generar una nueva cuenta
+** Acceder al sistema
+** Ver las materias y prácticas
+** Agendar una práctica
+** Realizar una práctica
 * Guía para implementar nuevas prácticas
+** Draft
+Hay que hablar sobre cómo son los pasos para poder implementar una práctica, si es que yo fuera alguien que no sabe nada de esto qué es lo primero que haría al respecto o cómo quisiera que empezara esto?
+- Cómo es que esto funciona?
+  Bueno, si ese es el objetivo entonces hay que ir poniendo una gráfica o algo de cómo es que estas cosas están funcionando, por ejemplo que existe un
+** Introducción al sistema de prácticas
+*** Qué es?
+El sistema de practicas es un servidor hecho en nodejs que se conecta con la interfaz web y tiene integrado el protocolo de comunicación y algunas funcionalidades de seguridad.
+
+Además de proveer un ejemplo básico de cómo comunicar con la interfaz.
+*** Metadata
+La configuración de la práctica se maneja principalmente con un archivo de configuración en yaml que guarda nombres, identificadores, widgets que se van a utilizar etc.
+
+Para más detalles en la configuración de este archivo referirse a:.
+*** Protocolo
+El protocolo consta de un mensaje inicial de conexión que incluye un usuario y contraseña para acceder.
+
+Nota: de momento esta contraseña es general para todas las prácticas y no se puede cambiar.
+
+Una vez iniciada la conexión se envía la información del metadata para construir la interfaz. Se puede estar enviando información del estado de la práctica así como esperando comandos que pueda estar enviando el usuario.
+*** Arquitectura
+Mostrar cómo está la interfaz web, el servidor de la práctica, cómo estas se conectan a través de websockets, y cuales son l
+** Cómo empezar
+*** Clonar el proyecto
+*** Instalar dependencias
+*** Iniciar el servidor
+** Metadata
+** Protocolo de comunicación
+** Generar una clase para administrar la práctica
 * Cómo desarrollar para la interfaz
 * Cómo desarrollar para el servidor de prácticas
 * Acerca de esta documentación
